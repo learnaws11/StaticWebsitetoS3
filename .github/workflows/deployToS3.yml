@@ -1,6 +1,6 @@
 name: Upload Website
 
-on:
+on:[pull_request, workflow_dispatch]
   push:
     branches:
     - main
