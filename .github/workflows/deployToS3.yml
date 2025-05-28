@@ -1,6 +1,15 @@
 name: Upload Website
 
 on:
+  workflow_dispatch:
+    input:
+      trigger_workflow:
+        description: 'Trigger workflow'
+        require: true
+        type: choice
+        option:
+        - Yes
+        - No
   push:
     branches:
     - main
